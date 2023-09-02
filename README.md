@@ -1,4 +1,7 @@
 ## YourPanel
+
+<img width="380" alt="1693637157090-removebg-preview" src="https://github.com/yourpanel/core/assets/35763284/401e2a80-6626-420f-b32f-da326c0d7540">
+
 The Cross-Platform Developer Panel
 ## Features
 
