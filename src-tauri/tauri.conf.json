@@ -57,8 +57,8 @@
       {
         "title": "YourPanel",
         "fullscreen": false,
-        "width": 1980,
-        "height": 900,
+        "width": 1400,
+        "height": 800,
         "center": true,
         "hiddenTitle": true
       }
