@@ -55,11 +55,12 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
         "title": "YourPanel",
-        "width": 800
+        "fullscreen": false,
+        "width": 1980,
+        "height": 900,
+        "center": true,
+        "hiddenTitle": true
       }
     ]
   }
