@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "next": "^13.4.19",
@@ -14,11 +15,13 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.43.0",
     "@tauri-apps/cli": "^1.4.0",
     "@types/node": "20.5.7",
     "@types/react": "18.2.21",
     "@unocss/cli": "^0.55.3",
     "autoprefixer": "^10.4.15",
+    "eslint": "^8.49.0",
     "typescript": "5.2.2",
     "unocss": "^0.55.3"
   }
