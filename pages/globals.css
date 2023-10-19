@@ -1,0 +1,45 @@
+@import "@unocss/reset/tailwind.css";
+@unocss all;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* General Reset */
+
+/* To ensure consistent box model across different browsers */
+html, body, div, h1, h2, h3, p, blockquote, pre,
+form, fieldset, legend, input, button, textarea,
+th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  user-select: none;
+}
+
+/* Remove underlines from links */
+a {
+    text-decoration: none;
+}
+
+/* To prevent elements from inheriting font styles */
+body, button, input, select, textarea {
+    font: 12px/1.5 Arial, Helvetica, sans-serif;
+}
+
+/* Remove default list item markers */
+ul, ol {
+    list-style: none;
+}

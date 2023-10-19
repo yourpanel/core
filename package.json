@@ -10,6 +10,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@radix-ui/themes": "2.0.0-rc.3",
     "next": "^13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0"

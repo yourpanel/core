@@ -60,7 +60,8 @@
         "width": 1400,
         "height": 800,
         "center": true,
-        "hiddenTitle": true
+        "hiddenTitle": true,
+        "resizable": false
       }
     ]
   }
