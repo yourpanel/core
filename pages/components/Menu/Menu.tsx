@@ -1,27 +1,30 @@
-import { useState } from 'react'
+import {  useState } from 'react'
 import Image from 'next/image'
+import { useI18n } from '@/locales'
 import Logo from '@/pages/assets/menu/logo.webp'
 import RocketSVG from '@/pages/assets/menu/rocket.svg'
 import PluginSVG from '@/pages/assets/menu/plugin.svg'
 import SettingSVG from '@/pages/assets/menu/setting.svg'
 
-const MENU_ITEMS = [
-  {
-    label: 'PROJECT',
-    icon: RocketSVG,
-  },
-  {
-    label: 'PLUGINS',
-    icon: PluginSVG,
-  },
-  {
-    label: 'SETTINGS',
-    icon: SettingSVG,
-  },
-]
 
 export default function Menu() {
   const [activeIndex, setActiveIndex] = useState(0)
+  const t = useI18n()
+
+  const MENU_ITEMS = [
+    {
+      label: t('nav.project'),
+      icon: RocketSVG,
+    },
+    {
+      label: t('nav.plugin'),
+      icon: PluginSVG,
+    },
+    {
+      label: t('nav.setting'),
+      icon: SettingSVG,
+    },
+  ]
 
   return (
     <menu className="menu min-h-screen w-113px bg-indigo-8">
