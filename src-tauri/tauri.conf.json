@@ -61,7 +61,8 @@
         "height": 800,
         "center": true,
         "hiddenTitle": true,
-        "resizable": false
+        "resizable": false,
+        "decorations": false
       }
     ]
   }
