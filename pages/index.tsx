@@ -1,4 +1,3 @@
-import { Button } from '@radix-ui/themes'
 import Menu from './components/Menu/Menu'
 
 export default function Home() {
