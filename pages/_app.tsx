@@ -3,8 +3,12 @@ import './globals.css'
 import { Theme } from '@radix-ui/themes'
 import type { Metadata } from 'next'
 import type { AppProps } from 'next/app'
+import type { AttributifyAttributes } from '@unocss/preset-attributify'
 import { I18nProvider } from '../locales'
 
+declare module 'react' {
+  interface HTMLAttributes<T> extends AttributifyAttributes {}
+}
 
 export const metadata: Metadata = {
   title: 'Create Next App',

@@ -14,15 +14,15 @@ export default function Menu() {
   const MENU_ITEMS = [
     {
       label: t('nav.project'),
-      icon: RocketSVG,
+      icon: 'i-ic-round-energy-savings-leaf',
     },
     {
       label: t('nav.plugin'),
-      icon: PluginSVG,
+      icon: 'i-ic-round-folder-copy',
     },
     {
       label: t('nav.setting'),
-      icon: SettingSVG,
+      icon: 'i-ic-baseline-grid-3x3',
     },
   ]
 
@@ -31,10 +31,12 @@ export default function Menu() {
       <div className='mt-53px flex justify-center'>
         <Image src={Logo} width={69} height={90} alt='YourPanel' />
       </div>
-      <nav className='mt-91px'>
+      <nav flex="~ col" className='mt-91px gap-48px'>
         {MENU_ITEMS.map((menu, index) => (
-          <div key={index}>
-            <Image src={menu.icon} alt={menu.label} />
+          <div flex="~ col" className='items-center gap-10px cursor-pointer' key={index}>
+            <div flex="center" className='w-38px h-38px rounded-9px transition-all' bg={activeIndex === index ? 'white' : ''}>
+              <div className={`${menu.icon}`} text={`${activeIndex === index ? '2xl black' : '3xl #7067C6'}`}></div>
+            </div>
             {index === activeIndex && <span className='text-center color-white'>{menu.label}</span>}
           </div>),
         )}

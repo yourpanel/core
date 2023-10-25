@@ -1,5 +1,6 @@
 import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
 
+
 export default defineConfig({
   presets: [
     presetUno(),
@@ -10,5 +11,8 @@ export default defineConfig({
       },
     }),
     presetAttributify(),
+  ],
+  rules: [
+    ['flex-center', { 'display': 'flex', 'align-items': 'center', 'justify-content': 'center' }],
   ],
 })

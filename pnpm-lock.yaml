@@ -2,11 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.43.0
+  '@iconify-json/ic': ^1.1.14
   '@radix-ui/themes': 2.0.0-rc.3
   '@tauri-apps/cli': ^1.4.0
   '@types/node': 20.5.7
   '@types/react': 18.2.21
   '@unocss/cli': ^0.55.3
+  '@unocss/preset-attributify': ^0.57.1
+  '@unocss/preset-icons': ^0.57.1
   autoprefixer: ^10.4.15
   eslint: ^8.49.0
   next: ^13.4.19
@@ -25,10 +28,13 @@ dependencies:
 
 devDependencies:
   '@antfu/eslint-config': 0.43.0_rngtr6f3b25lvetpihwplgecf4
+  '@iconify-json/ic': 1.1.14
   '@tauri-apps/cli': 1.4.0
   '@types/node': 20.5.7
   '@types/react': 18.2.21
   '@unocss/cli': 0.55.3
+  '@unocss/preset-attributify': 0.57.1
+  '@unocss/preset-icons': 0.57.1
   autoprefixer: 10.4.15
   eslint: 8.49.0
   typescript: 5.2.2
@@ -282,8 +288,27 @@ packages:
     resolution: {integrity: sha1-tSBSnsIdjllFoYUd/Rwy6U45/0U=}
     dev: true
 
+  /@iconify-json/ic/1.1.14:
+    resolution: {integrity: sha512-vbATa9uwb9pIsRWQ+iXObQCgLTePk/0vo4shBr3Td0GnTjsAU/7VUGTkrZFVf5vpgiG6OsXkcKMPzBPvt966sg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify/types/2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
+    dev: true
+
+  /@iconify/utils/2.1.11:
+    resolution: {integrity: sha512-M/w3PkN8zQYXi8N6qK/KhnYMfEbbb6Sk8RZVn8g+Pmmu5ybw177RpsaGwpziyHeUsu4etrexYSWq3rwnIqzYCg==}
+    dependencies:
+      '@antfu/install-pkg': 0.1.1
+      '@antfu/utils': 0.7.6
+      '@iconify/types': 2.0.0
+      debug: 4.3.4
+      kolorist: 1.8.0
+      local-pkg: 0.4.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@iconify/utils/2.1.9:
@@ -1935,6 +1960,10 @@ packages:
     resolution: {integrity: sha512-2hV9QlE/iOM4DHQ7i6L8sMC1t5/OVAz6AfGHjetTXcgbNfDCsHWqE8jhLZ1y2DeUvKwJvj2A09sYbYQ8E27+Gg==}
     dev: true
 
+  /@unocss/core/0.57.1:
+    resolution: {integrity: sha512-cqQW/4gCuk+bFMPg9lBanuRNQ9Lx1l4PpMN/6uKxI5WROpq7ce/Xb4uGvAxKLh3ITtFSpXs2cLfsy7QD6cVD/Q==}
+    dev: true
+
   /@unocss/extractor-arbitrary-variants/0.55.3:
     resolution: {integrity: sha512-ATVNywbUw0DhIT+iau35WQuoij/NPCPd5uKshhs+vnS4c7BVKUMXE1fk9df9AgVPVhwBN4A256EqkcPHrfv70w==}
     dependencies:
@@ -1966,11 +1995,27 @@ packages:
       '@unocss/core': 0.55.3
     dev: true
 
+  /@unocss/preset-attributify/0.57.1:
+    resolution: {integrity: sha512-pvGQHaqBlB0jQysWhNbcKLOGrkj8b53k0sAa9LYxQjD1fa8t/dwbuMpZv4twX+gysF0vBhxRoWBPLH1/S6zRZg==}
+    dependencies:
+      '@unocss/core': 0.57.1
+    dev: true
+
   /@unocss/preset-icons/0.55.3:
     resolution: {integrity: sha512-UVpzkvO1ghNBNRMGylgYE73ufRFdU1l3pY11ePV8a/80HWFKL3QNq4Hoqa00M5CEnxBZT8dECTuj+f+l3Pn5wg==}
     dependencies:
       '@iconify/utils': 2.1.9
       '@unocss/core': 0.55.3
+      ofetch: 1.3.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@unocss/preset-icons/0.57.1:
+    resolution: {integrity: sha512-ve4jC6yREfS0mv97DCld9xLjMuiSCcsQPKucdtpUfCjLMqtGd1ZGGdFv02Q+92NkW7HDfgj+izEw1SKh9695Ow==}
+    dependencies:
+      '@iconify/utils': 2.1.11
+      '@unocss/core': 0.57.1
       ofetch: 1.3.3
     transitivePeerDependencies:
       - supports-color
