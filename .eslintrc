@@ -1,3 +1,10 @@
 {
-    "extends": "@antfu"
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime",
+      "@antfu"
+    ],
+    "rules": {
+      "react/no-unknown-property": false
+    }
   }
