@@ -1,11 +1,11 @@
 [package]
 name = "tauri-plugin-plugin-loader"
 version = "0.0.0"
-authors = [ "You" ]
-description = ""
+authors = ["You"]
 edition = "2021"
-rust-version = "1.60"
 exclude = ["/examples"]
+rust-version = "1.60"
+description = ""
 
 [dependencies]
 tauri = { version = "1.4.0" }

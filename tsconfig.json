@@ -2,8 +2,8 @@
   "compilerOptions": {
     "incremental": true,
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "bundler",
     "paths": {
@@ -11,10 +11,10 @@
     },
     "resolveJsonModule": true,
     "allowJs": true,
-    "noEmit": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
     "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
     "skipLibCheck": true,
     "plugins": [
       {

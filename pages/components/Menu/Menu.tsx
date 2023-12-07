@@ -33,17 +33,18 @@ export default function Menu() {
 
   return (
     <menu className="menu min-h-screen w-113px bg-indigo-8">
-      <div className='mt-53px flex justify-center'>
-        <Image src={Logo} width={69} height={90} alt='YourPanel' />
+      <div className="mt-53px flex justify-center">
+        <Image src={Logo} width={69} height={90} alt="YourPanel" />
       </div>
-      <nav className='mt-91px gap-48px' flex="~ col">
+      <nav className="mt-91px gap-48px" flex="~ col">
         {MENU_ITEMS.map((menu, index) => (
-          <div className='items-center gap-10px cursor-pointer' flex="~ col" key={index} onClick={() => handleClickMenuItem(menu, index)}>
-            <div className='w-38px h-38px rounded-9px' flex="center" bg={activeIndex === index ? 'white' : ''}>
+          <div className="cursor-pointer items-center gap-10px" flex="~ col" key={index} onClick={() => handleClickMenuItem(menu, index)}>
+            <div className="h-38px w-38px rounded-9px" flex="center" bg={activeIndex === index ? 'white' : ''}>
               <div className={`${menu.icon} transition-all`} text={`${activeIndex === index ? '2xl black' : '3xl #7067C6'}`} hover={activeIndex === index ? 'text-3xl' : 'text-white/50'}></div>
             </div>
-            {index === activeIndex && <span className='text-center color-white'>{menu.label}</span>}
-          </div>),
+            {index === activeIndex && <span className="text-center color-white">{menu.label}</span>}
+          </div>
+        ),
         )}
       </nav>
     </menu>
