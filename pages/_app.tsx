@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 }
 
 export default function App({ Component, pageProps }: AppProps) {
+  if (typeof window === 'undefined')
+    return null
   return (
     <I18nProvider locale={pageProps.locale}>
       <Theme accentColor="indigo">

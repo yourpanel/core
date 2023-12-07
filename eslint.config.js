@@ -1,11 +1,12 @@
-import antfu from '@antfu/eslint-config'
+const antfu = require('@antfu/eslint-config').default
 
-export default antfu(
-  {
-    gitignore: {
-      files: ['.gitignore', '.eslintignore'],
-    },
-    unocss: true,
-    formatters: true,
+module.exports = antfu({
+  gitignore: {
+    files: ['.gitignore', '.eslintignore'],
   },
-)
+  unocss: true,
+  formatters: true,
+  rules: {
+    'no-console': 'off',
+  },
+})
