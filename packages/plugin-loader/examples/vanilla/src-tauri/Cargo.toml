@@ -1,5 +1,5 @@
 [package]
-name = "app"
+name = "plugin-example-app"
 version = "0.1.0"
 description = "A Tauri App"
 authors = [ "You" ]
@@ -10,11 +10,11 @@ rust-version = "1.60"
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = [ "derive" ] }
-tauri = { version = "1.4.0" }
+tauri = { version = "1.4.0", features = [] }
 tauri-plugin-plugin-loader = { path = "../../../" }
 
 [build-dependencies]
-tauri-build = { version = "1.4.0" }
+tauri-build = { version = "1.4.0", features = [] }
 
 [features]
 custom-protocol = [ "tauri/custom-protocol" ]

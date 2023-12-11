@@ -9,3 +9,4 @@ description = ""
 
 [dependencies]
 tauri = { version = "1.4.0" }
+wasmtime = "15.0.1"

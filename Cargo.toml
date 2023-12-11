@@ -1,0 +1,8 @@
+[workspace]
+resolver = "2"
+members = [
+    "src-tauri",
+    "packages/plugin-loader",
+    "packages/plugin-loader/examples/wasmtime-demo",
+    "packages/plugin-loader/examples/vanilla/src-tauri",
+]
